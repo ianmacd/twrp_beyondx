@@ -1,4 +1,4 @@
-# Version 3.3.1-7_ianmacd.
+# Version 3.3.1-100_ianmacd.
 
 # Architecture
 TARGET_ARCH := arm64
@@ -34,7 +34,7 @@ BOARD_KERNEL_BASE := 0x10000000
 BOARD_KERNEL_PAGESIZE := 2048
 TARGET_PREBUILT_KERNEL := device/samsung/beyondx/prebuilt/Image
 
-BOARD_MKBOOTIMG_ARGS := --kernel_offset 0x00008000 --ramdisk_offset 0x01000000 --tags_offset 0x00000100 --header_version 1 --board SRPSC04B001RU
+BOARD_MKBOOTIMG_ARGS := --kernel_offset 0x00008000 --ramdisk_offset 0x01000000 --tags_offset 0x00000100 --header_version 1 --board SRPSC04B002RU
 
 # Platform
 TARGET_BOARD_PLATFORM := exynos5
@@ -67,4 +67,5 @@ TW_NO_LEGACY_PROPS := true
 BOARD_SUPPRESS_SECURE_ERASE := true
 BOARD_INCLUDE_RECOVERY_DTBO := true
 BOARD_PREBUILT_DTBOIMAGE := device/samsung/beyondx/prebuilt/recovery_dtbo
-PLATFORM_SECURITY_PATCH := 2019-11-01
+PLATFORM_VERSION := 10
+PLATFORM_SECURITY_PATCH := 2019-12-01
